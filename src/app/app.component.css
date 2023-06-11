@@ -1,0 +1,102 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 10px;
+}
+#reloj{
+    cursor: default;
+    font-weight: bold;
+}
+#imb{
+    border-radius: 50%; /* Establece el radio al 50% para obtener un círculo */
+    overflow: hidden;
+}
+.img-fluid{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.img-fluid:hover{
+    box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.4);
+    transition: all 1s;
+}
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    margin-top: 10px;
+}
+.btn-dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-dark:hover{
+background-color: rgb(230, 211, 185) ;
+border-color: rgb(230, 211, 185) ;
+color: black;
+transition: gradient all 0.2;
+}
+.btn-primary{
+    display: block; 
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    color: black;
+}
+.btn-primary{
+    margin: 2%;
+}
+.btn-primary:hover, .btn-primary:active{
+    background-color:black ;
+    border-color: black ;
+    color: white;
+    transition: gradient all 0.2;
+}
+.card-body{
+    margin: 4%;
+}
+.accordion-item:first-child{
+    margin-top: 0%;
+}
+.accordion {
+    --bs-accordion-active-bg: #FFFCFA;
+}
+.accordion-item {
+    --bs-accordion-border-width: 1px;
+}
+.accordion-button{
+    font-weight: bold;
+    font-size: 20px;
+}
+.special-title, 
+.special-text{
+    text-align: center;
+}
+.progress{
+    --progress-height: 10%;
+}
+#im1{
+    width: 260px; /* Altura deseada para el recorte */
+    overflow: hidden; /* Oculta el contenido que excede las dimensiones del contenedor */
+}
+#im2{
+    width: 230px; /* Altura deseada para el recorte */
+    overflow: hidden; /* Oculta el contenido que excede las dimensiones del contenedor */
+  }
+#im3{
+    width: 300px; /* Altura deseada para el recorte */
+    overflow: hidden; /* Oculta el contenido que excede las dimensiones del contenedor */
+}
+.col-md-4{
+    margin: auto;    
+}
+.container p{
+    margin-top: 5%;
+}

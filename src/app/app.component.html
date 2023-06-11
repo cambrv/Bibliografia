@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--Fuente de Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> 
+  
+  <!--Importaciones de bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <title>Biografía</title>
+</head>
+<body>
+  <!--Barra de navegación-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="mc">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Camily Bravo Flores</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="app.component.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/camilybravo/"  target="_blank">Contacto</a>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Reloj-->
+  <script>
+  function mostrarReloj() {
+    var fecha = new Date();
+    var horas = fecha.getHours();
+    var minutos = fecha.getMinutes();
+    var segundos = fecha.getSeconds();
+    if (horas < 10) {
+      horas = "0" + horas;
+    }   
+    if (minutos < 10) {
+      minutos = "0" + minutos;
+    }  
+    if (segundos < 10) {
+      segundos = "0" + segundos;
+    }
+    var horaActual = horas + ":" + minutos + ":" + segundos;
+    document.getElementById("reloj").innerHTML = horaActual;
+  }
+  // Llama a la función mostrarReloj cada segundo (1000 milisegundos)
+  setInterval(mostrarReloj, 1000);
+</script>
+
+  <!--Tarjeta-->
+  <div class="card" style="width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title"><b>¡Bienvenido/a!</b></h5>
+      <h5 class="card-title"><b>            <div class="nav-link" id="reloj-contenedor" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"><div id="reloj"></div></div>
+      </b></h5>
+      <img src="https://media.licdn.com/dms/image/D4E03AQFiQnutP25k8Q/profile-displayphoto-shrink_800_800/0/1680283080380?e=1691625600&v=beta&t=T0MIeprR2lAIZmNdyNnBvwTqm0DwDqoOKTecpEcQM2Y" class="img-fluid" id="imb" alt="Foto de biografía">
+      <p class="card-text"><b>Nombres:</b> Camily Ivanne Bravo Flores</p>
+      <p class="card-text"><b>Cumpleaños:</b> 22 de Junio del 2003</p>
+      <p class="card-text"><b>C.I:</b> 0706670254 </p>
+      <a href="https://github.com/cambrv" target="_blank" class="btn btn-dark"> GitHub</a>
+    </div>
+  </div>
+
+<!--Personal-->
+<p>
+  <a class="btn btn-primary" id="b1" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Acerca de</a>
+  <a class="btn btn-primary" id="b2" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Metas Académicas</a>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        <p>Estudiante de Tecnologías de la Información apasionada por el diseño y la experiencia de usuario. Disfruto aprender del diseño, cuento con habilidades en programación en C# y Java. Me apasiona crear soluciones que combinen una interfaz intuitiva y atractiva con una experiencia de usuario fluida y eficiente. 
+        </p>
+        </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        <p>Mis metas se centran en absorber conocimientos de todas las asignaturas para obtener una base sólida en mi formación.
+          Así mismo, deseo especializarme en el campo del front-end y convertirme en un profesional competente y actualizada, capaz de enfrentar los desafíos del mundo tecnológico en constante evolución.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!--Acordeón-->
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Estudios
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          <p><strong>Escuela primaria: </strong> Unidad Educativa Particular "Siete de Mayo"</p>
+          <p><strong>Escuela secundaria: </strong> Unidad Educativa Particular "Siete de Mayo"</p>
+          <p class="special-title"><strong>Título de Bachiller: </strong></p>
+          <p class="special-text">Servicios de informática</p>
+          <div class="progress" role="progressbar" aria-label="Barra" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 100%">Completado</div>
+          </div>
+          <br><p><strong>Universidad: </strong> Universidad Técnica de Machala</p>
+          <p class="special-title"><strong>Carrera: </strong>
+          <p class="special-text">Tecnologías de la información
+          </p>
+          <div class="progress" role="progressbar" aria-label="Barra" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning text-dark" style="width: 50%">50%</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Me interesa
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+
+          <div class="container">
+            <h3> Especializaciones de Informática</h3>
+            <div class="row">
+              <div class="col-md-4" id="im1">
+                  <img src="https://media.licdn.com/dms/image/C5612AQHmLFOjJGqu2g/article-cover_image-shrink_720_1280/0/1520213032425?e=2147483647&v=beta&t=AWsSqN0Gr4QpqaU_mxPlnxVM34A9k2jcTo_K_0R7Utw" alt="Imagen 1" class="img-fluid">
+                  <p>Front-end</p>
+              </div>
+              <div class="col-md-4" id="im2">
+                  <img src="https://geekflare.com/wp-content/uploads/2021/10/Blockchain.jpg" alt="Imagen 2" class="img-fluid">
+                  <p>Block-chain</p>
+              </div>
+              <div class="col-md-4" id="im3">
+                  <img src="https://www.ekon.es/wp-content/uploads/2020/06/image1-1.jpg" alt="Imagen 3" class="img-fluid">
+                  <p>Seguridad Informática</p>
+
+              </div>
+            </div>
+          </div>
+        
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+          <script>
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+              event.preventDefault();
+              $(this).ekkoLightbox();
+            });
+          </script>
+          </div>
+      </div>
+
+      
+    </div>
+  </div>
+</body>
+</html>
